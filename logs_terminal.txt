@@ -1,0 +1,44 @@
+(venv) nymphadora@napla:~/dev/evinst-webscrap$ heroku buildpacks:add --index 1 https://github.com/heroku-buildpack-chromedriver -a evinst-scrap
+(node:32021) SyntaxError Plugin: heroku: /home/nymphadora/.local/share/heroku/config.json: Unexpected string in JSON at position 72
+module: @oclif/config@1.14.0
+task: runHook prerun
+plugin: heroku
+root: /snap/heroku/3881
+See more details with DEBUG=*
+Buildpack added. Next release on evinst-scrap will use https://github.com/heroku-buildpack-chromedriver.
+Run git push heroku master to create a new release using this buildpack.
+(venv) nymphadora@napla:~/dev/evinst-webscrap$ heroku buildpacks:add --index 2 https://github.com/heroku-buildpack-chromedriver -a evinst-scrap
+(node:32072) SyntaxError Plugin: heroku: /home/nymphadora/.local/share/heroku/config.json: Unexpected string in JSON at position 72
+module: @oclif/config@1.14.0
+task: runHook prerun
+plugin: heroku
+root: /snap/heroku/3881
+See more details with DEBUG=*
+ ›   Error: The buildpack https://github.com/heroku-buildpack-chromedriver is already set on your app.
+(venv) nymphadora@napla:~/dev/evinst-webscrap$ heroku config:set GOOGLE_CHROME_BIN=/app/.apt/usr/bin/google_chrome(node:32181) SyntaxError Plugin: heroku: /home/nymphadora/.local/share/heroku/config.json: Unexpected string in JSON at position 72
+module: @oclif/config@1.14.0
+task: runHook prerun
+plugin: heroku
+root: /snap/heroku/3881
+See more details with DEBUG=*
+ ›   Error: Missing required flag:
+ ›     -a, --app APP  app to run command against
+ ›   See more help with --help
+(venv) nymphadora@napla:~/dev/evinst-webscrap$ heroku config:set GOOGLE_CHROME_BIN=/app/.apt/usr/bin/google_chrome -a evinst-scrap
+Setting GOOGLE_CHROME_BIN and restarting ⬢ evinst-scrap... ⣾ 
+(node:32231) SyntaxError Plugin: heroku: /home/nymphadora/.local/share/heroku/config.json: Unexpected string in JSON at position 72
+module: @oclif/config@1.14.0
+task: runHook prerun
+plugin: heroku
+root: /snap/heroku/3881
+Setting GOOGLE_CHROME_BIN and restarting ⬢ evinst-scrap... done, v3
+GOOGLE_CHROME_BIN: /app/.apt/usr/bin/google_chrome
+(venv) nymphadora@napla:~/dev/evinst-webscrap$ heroku config:set CHROMEDRIVER_PATH=/app/.chromedriver/bin/chromedriver -a evinst-scrap
+Setting CHROMEDRIVER_PATH and restarting ⬢ evinst-scrap... ⣾ 
+(node:32286) SyntaxError Plugin: heroku: /home/nymphadora/.local/share/heroku/config.json: Unexpected string in JSON at position 72
+module: @oclif/config@1.14.0
+task: runHook prerun
+plugin: heroku
+root: /snap/heroku/3881
+Setting CHROMEDRIVER_PATH and restarting ⬢ evinst-scrap... done, v4
+CHROMEDRIVER_PATH: /app/.chromedriver/bin/chromedriver
